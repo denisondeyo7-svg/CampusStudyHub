@@ -94,6 +94,7 @@ if ($results && mysqli_num_rows($results)> 0){
     
     <div class="dashboard">
         <section class="boxes">
+            <br>
             <div class="box">
                 <div class="welcome">
                     <p>
@@ -192,7 +193,7 @@ if ($results && mysqli_num_rows($results)> 0){
 
 
         </section>
-        
+        <br/>
         <div class="about_wrapper">
             <h2>About us</h2>
 
@@ -251,12 +252,11 @@ if ($results && mysqli_num_rows($results)> 0){
 
 
         </div>
-    </section>
-   
-<!--------------foter----------->
-    <footer>
-        <div class="footer-wrapper">
-            <div class="main-footer">
+        
+        <!--------------foter----------->
+        <footer class="footer2">
+            <div class="footer-wrapper">
+                <div class="main-footer">
                 <div class="developer">
                     <h2>Campus Study Hub</h2>
                     <p>Developed By Denis</p>
@@ -291,8 +291,9 @@ if ($results && mysqli_num_rows($results)> 0){
                 <small>Campus study hub</small>
             </div>
         </div>
-
+        
     </footer>
+</section>
 
 
     <script>
@@ -301,19 +302,29 @@ if ($results && mysqli_num_rows($results)> 0){
         menu =document.getElementById('menu');
         overlay =document.getElementById('overlay');
 
-        menubtn.addEventListener('click',()=>{
+        menubtn.addEventListener('click',(e)=>{
+        e.stopPropagation();
             menu.classList.toggle('active');
             overlay.classList.toggle('active');
         });
 
-        closebtn.addEventListener('click',()=>{
+        closebtn.addEventListener('click',(e)=>{
+        e.stopPropagation();
             menu.classList.remove('active');
             overlay.classList.remove('active');
         });
 
-        overlay.addEventListener('click',()=>{
+        overlay.addEventListener('click',(e)=>{
+        e.stopPropagation();
             menu.classList.remove('active');
             overlay.classList.remove('active');
+        });
+
+        window.addEventListener('click',(e)=>{
+            if(!menu.contains(e.target)){
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+            }
         });
     </script>
 </body>

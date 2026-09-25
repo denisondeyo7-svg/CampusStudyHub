@@ -16,13 +16,14 @@ body {
 header {
     width: 100%;
     position: fixed;
+    z-index: 1000;
     top: 0;
     background: goldenrod;
-    height: 5.3rem;
-    justify-content: center;
-    z-index: 1000;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
 }
 
@@ -34,7 +35,220 @@ header .logo img {
     top: -1.3rem;
 
 }
+.index-page-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 12px;
+}
 
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #33333348;
+    position: absolute;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    
+}
+.logo-container{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.start-links{
+    display: flex;
+    gap: 12px;
+
+    margin-right: 12px;
+}
+.mytitle{
+    margin-left: 22px;
+    text-align: center;
+    color: #ffffff34;
+    -webkit-text-stroke: 1px  #fff;
+}
+#login-index-btn{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #1a2e38;
+}
+
+#reg-btn{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #24607e;
+}
+#gobtn{
+    padding: 22px;
+    border: none;
+    width: 26rem;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+}
+.container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px;
+    width: 100%;
+}
+
+.container-content h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    font-family: serif;
+    color: #ffffff34;
+    -webkit-text-stroke: 1px  #fff;
+}
+
+.container-content small{
+    text-transform: capitalize;
+    text-align: center;
+   
+    color: #ffffffa4;
+   
+}
+
+.theme{
+    color: #f1ebc5;
+}
+#sendmessage{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background: #00f;
+    color: #ebe9e9;
+    font-size: 16px;
+}
+#message{
+    width: 100%;
+    height: 6rem;
+    border: 1px solid #979090;
+    outline: none;
+    border-radius: 10px;
+}
+#message:focus{
+    border: 1px solid #007bff;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+    
+}
+
+.about-card-index{
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: auto;
+    padding: 12px ;
+    border-radius: 12px;
+
+    
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    padding: 12px ;
+    border-radius: 12px;
+
+    
+}
+
+
+
+.what{
+    padding: 12px;
+    font-weight: 550;
+    background: #999;
+    color: #fff;
+}
+
+.about-card-index:hover{
+    background: #999999a1;
+}
+
+.about-card-index  h1{
+    color: #007bff;
+}
+.about-card-index  i{
+    color: #999;
+    font-size: 44px;
+}
+
+.aboutp{
+    font-size: 43px;
+    font-weight: 550;
+    font-family: serif;
+    color: goldenrod;
+    text-align: center;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 22px;
+}
+
+.index-form{
+    width: 80%;
+    box-shadow:  0 0 0;
+}
+.index-form .input{
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+.index-form input{
+    width: 100%;
+    border-radius: 10px;
+}
 #menubtn {
     background: hsl(197, 73%, 76%);
     padding: 4px;
@@ -212,24 +426,21 @@ input:focus,#textarea:focus {
     padding: 50px;
 }
 
-.container h2 {
-    color: #fff;
-}
 
 .myimage {
-    height: 22rem;
-    width: 22rem;
+    border-radius: 12px;
+    max-width: 100%;
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
 }
 
-#homeimg {
+.myimage img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.message a {
-    color: #00f;
-    font-weight: 500;
-}
 
 .card {
     padding: 10px;
@@ -271,7 +482,7 @@ input:focus,#textarea:focus {
     align-items: center;
     flex-wrap: wrap;
     height: 100vh auto;
-    padding-bottom: 4rem;
+
     gap: 2rem;
     position: relative;
     top: 5rem;
@@ -285,7 +496,6 @@ input:focus,#textarea:focus {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 1;
     background: #fff;
     border-left: 3px solid#007ffb;
     box-shadow: 2px 2px 10px #888;
@@ -314,6 +524,7 @@ input:focus,#textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 22px;
 
 
 
@@ -327,10 +538,28 @@ input:focus,#textarea:focus {
     gap: 22px;
 
 }
+.slider-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+.slider-index img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+ 
+}
 .slider {
-    height: 25rem;
-    width: 35rem;
+
+    height: 30rem;
+    width: 60%;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -655,8 +884,11 @@ table {
 .downloadable a {
     text-decoration: none;
 }
-
+.footer2{
+    padding: 15px;
+}
 footer {
+  
     position: relative;
     top: 5rem;
     height: 100vh;
@@ -844,6 +1076,13 @@ ol {
 }
 
 @media (max-width:600px) {
+
+    .about-card{
+        width: 100%;
+    }
+     .about-card-index{
+        width: 100%;
+    }
 
     .slider {
         height: 25rem;
