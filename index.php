@@ -160,7 +160,7 @@ if(isset($_POST['sendmessage'])){
             </div>
 <br/>
             <div class="contact">
-                <h1>Share Thoughts</h1>
+                <h1>Share your message</h1>
 
 
                 <div class="contact-container">
@@ -200,19 +200,10 @@ if(isset($_POST['sendmessage'])){
                 <div class="developer">
                     <h2>Campus Study Hub</h2>
                     <p>Developed By Denis</p>
+                    <a href="front-end/documentation.html">Documentation</a>
                 </div>
 
-                <div class="developer">
-                    <h2>Links</h2>
-                    <a href="dashboard.php">Dashboard</a>
-                    <a href="front-end/timetable.html">Timetable</a>
-                    <a href="front-end/notes.html">Notes</a>
-                    <a href="">Past Papers</a>
-                    <a href="">News and Events</a>
-                    <a href="front-end/contact.php">Contact</a>
-                    <a href="profile.php">Profile</a>
-                    <a href="logout.php">Logout</a>
-                </div>
+                
 
                 <div class="developer">
                     <h2>Contact</h2>
@@ -227,8 +218,8 @@ if(isset($_POST['sendmessage'])){
 
             </div>
             <div class="subfooter">
-                <small>&copy AmazingDenis 2026</small>
-                <small>Campus study hub</small>
+                <small>&copy Campus study hub 2026</small>
+                
             </div>
         </div>
 

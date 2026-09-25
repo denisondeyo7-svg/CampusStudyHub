@@ -161,12 +161,14 @@ header .logo img {
 }
 
 .about-wrapper{
+    padding: 12px;
     display: flex;
     flex-wrap: wrap;
     gap: 22px;
-    justify-content: center;
+   
     align-items: center;
     margin: 22px;
+    
     
 }
 
@@ -175,8 +177,9 @@ header .logo img {
     flex-direction: column;
     width: 22rem;
     height: auto;
-    padding: 12px ;
+    padding: 15px ;
     border-radius: 12px;
+  
 
     
 }
@@ -184,7 +187,7 @@ header .logo img {
 .about-card{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     height: auto;
     padding: 12px ;
     border-radius: 12px;
@@ -201,9 +204,6 @@ header .logo img {
     color: #fff;
 }
 
-.about-card-index:hover{
-    background: #999999a1;
-}
 
 .about-card-index  h1{
     color: #007bff;
@@ -1075,6 +1075,48 @@ ol {
 
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 22px;
+    background: #fff;
+    box-shadow: 0 0 5px #555;
+    width: 90%;
+}
+.document{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.mycontent{
+    color: #8b8888;
+    font-weight: 650;
+}
+.documentation-body{
+    margin: 12px;
+    border-radius: 10px;
+    border: 1px solid #999999b6;
+    padding: 12px;
+}
+.documentation-body:hover{
+    background: #99999963;
+    
+}
+
+.documentation-body h2{
+    color: #555;
+}
+.projname{
+    -webkit-text-stroke: 1px  #555;
+    color: transparent;
+}
+
+.developer-name{
+    
+    color: #00f;
+}
 @media (max-width:600px) {
 
     .about-card{
