@@ -260,7 +260,7 @@ if ($results && mysqli_num_rows($results)> 0){
                 <div class="developer">
                     <h2>Campus Study Hub</h2>
                     <p>Developed By Denis</p>
-                    <a href="documentation.html">Documentation</a>
+                    <a href="front-end/documentation.html">Documentation</a>
                 </div>
 
                 <div class="developer">
