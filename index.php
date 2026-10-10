@@ -75,7 +75,7 @@ if(isset($_POST['sendmessage'])){
              <div class="container-content">
                 <h1>Campus study Hub</h1>
             
-                <small>Only for Information Technology</small>
+                <h2>Only for Information Technology</h2>
                 <br>
                 
                 <div class="theme">
@@ -83,10 +83,11 @@ if(isset($_POST['sendmessage'])){
                         Access all your notes, revision papers, and campus news while staying on track with your timetable and deadlines.
                     </p>
                 </div>
-                <small>Developed by Denis</small>
+                <br>
+                <h2>Developed by Denis</h2>
                 <br/><br/>
-                <a href="front-end/register.php">
-                    <button id="gobtn">Get Started</button>
+                <a href="front-end/login.php">
+                    <button id="gobtn">Login</button>
                 </a>
             </div>
             
@@ -110,18 +111,18 @@ if(isset($_POST['sendmessage'])){
             <div class="about-wrapper">
                 <div class="about-card-index">
                     <h1>Our Story</h1>
-                    <i class="fas fa-quote-left"></i>
+                    
                     <p>
                        Campus Study Hub is a modern student platform built to make campus life simpler, smarter, and more connected.
 
                     From class schedules and study notes to deadlines, events, news, and important updates, Campus Study Hub brings the things students need into one convenient space.
                     </p>
-                    <i class="fas fa-quote-right"></i>
+                  
                 </div>
 
                 <div class="about-card-index">
                     <h1>Built for Student Life</h1>
-                    <i class="fas fa-quote-left"></i>
+                    
                     <p>
                         University comes with a lot to keep track of. Classes. Assignments. Deadlines. Events. Announcements. Opportunities.
 
@@ -129,32 +130,32 @@ if(isset($_POST['sendmessage'])){
 
                         Campus Study Hub helps students spend less time searching for information and more time learning, creating, and achieving.
                     </p>
-                    <i class="fas fa-quote-right"></i>
+                  
                 </div>
 
                 
 
                 <div class="about-card-index">
                     <h1>Our Vision</h1>
-                    <i class="fas fa-quote-left"></i>
+                    
                     <p>
                         To build a smarter digital campus where information is accessible, opportunities are visible, and students are empowered to succeed.
                     </p>
-                    <i class="fas fa-quote-right"></i>
+                  
                 </div>
 
                 <div class="about-card-index">
                     <h1>Our Mission</h1>
-                    <i class="fas fa-quote-left"></i>
+                    
                     <p>
-                        We turn everyday campus challenges into simple digital solutions—one feature at a time.
+                        We turn everyday campus challenges into simple digital solutions.
 
                         Campus Study Hub isn't just another student website.
                         It's a digital space built around the way students actually live, learn, and connect.
 
                         Study smarter. Stay organized. Stay connected.
                     </p>
-                    <i class="fas fa-quote-right"></i>
+                  
                 </div>
 
             </div>
@@ -186,7 +187,7 @@ if(isset($_POST['sendmessage'])){
                         </div>
 
                         <div class="input">
-                            <textarea name="message" id="message"placeholder="type message here ..."required></textarea>
+                            <textarea name="message" id="message"placeholder="Type message here ..."required></textarea>
                         </div>
                         <button type="submit" name="sendmessage"id="sendmessage">Share Thought  <i class="fas fa-paper-plane"></i></button>
                     </form>

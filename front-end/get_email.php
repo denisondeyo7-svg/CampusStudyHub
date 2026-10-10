@@ -92,8 +92,12 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     <link rel="stylesheet" href="../fontawesome-free-7.2.0-web/css/all.min.css">
 </head>
 <body>
-    <div class="form-wrapper">
-        <form action="" method="post">
+    <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-img">
+                <img src="../1774128504685.png" alt="">
+            </div>
+            <form action="" method="post">
             <h2>Password Reset</h2>
             <?php 
                 if(!empty($error)){
@@ -110,6 +114,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
            
             <button id="loginbtn" type="submit">Send Password Reset Link</button>
         </form>
+    </div>
     </div>
 </body>
 </html>

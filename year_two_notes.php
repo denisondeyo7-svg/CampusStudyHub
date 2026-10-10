@@ -12,19 +12,20 @@ include("connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
-    <title>Notes- campus_study_hub</title>
+    <title>Notes | campus study hub</title>
 </head>
 
 <body>
 
     <div class="notes-wrapper">
         <div class="content">
-            <button onclick="history.back()"id="backbtn"><i class="fas fa-undo"></i>Back</button>
-            <h3>Hello <?php echo $_SESSION['username'];?> !</h3>
-            <div class="welcome">
-                <p>Access all  notes here.</p>
+            <div class="back">
+                <button onclick="history.back()"id="backbtn"><i class="fas fa-undo"></i>Back</button>
             </div>
-
+            <div class="welcome">
+                <h3>Access your notes here <?php echo $_SESSION['username'];?> !</h3>
+               
+            </div>
         </div>
 <br>
         

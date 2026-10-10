@@ -65,11 +65,14 @@ if ($results && mysqli_num_rows($results)> 0){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Dashboard | Campus Study Hub</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
 </head>
 <body>
+    <div class="whatsapp">
+        <a href="http://wa.me/254726534460"><i class="fab fa-whatsapp"></i></a>
+    </div>
     <header>
         <div class="logo">
             <img src="file_000000002488722fb534a48b1deedd3a.png" alt="#logo">
@@ -98,7 +101,7 @@ if ($results && mysqli_num_rows($results)> 0){
             <div class="box">
                 <div class="welcome">
                     <p>
-                        <h2>Hello and welcome back <?php echo $_SESSION['username'];?>!</h2>Welcome  to Campus study Hub. We ensure that you don't miss any deadline , stay informed with any news and updates, get in touch with timetable , revision pdfs and notes for your studies, we are delighted to have you.
+                        <h1>Welcome back <?php echo $_SESSION['username'];?> !</h1>Welcome  to Campus study Hub. We ensure that you don't miss any deadline , stay informed with any news and updates, get in touch with timetable , revision pdfs and notes for your studies, we are delighted to have you.
 
                     </p>
                 </div>
@@ -195,7 +198,7 @@ if ($results && mysqli_num_rows($results)> 0){
         </section>
         <br/>
         <div class="about_wrapper">
-            <h2>About us</h2>
+            <h2>Hear from us</h2>
 
             <div class="about_content">
                 <div class="about-card">
@@ -211,22 +214,44 @@ if ($results && mysqli_num_rows($results)> 0){
                     <p>For more inquiries and assistant we are here to offer help ,reach us through the following :</p>
             
                     <div class="socials-links">
-                        <a href="http://wa.me/254726534460"><i class="fab fa-whatsapp"></i> Whatsapp</a>
-                        <a href="http://web.facebook.com/amazing.denis.24"><i class="fab fa-facebook"></i> Facebook</a>
-                        <a href="mailto:denisondeyo7@gmail.com"><i class="fab fa-google"></i> Email </a>
-                        <a href="tel:+254726534460"><i class="fas fa-phone"></i> Call now</a>
+                        <a href="http://wa.me/254726534460"><i class="fab fa-whatsapp"></i> </a>
+                        <a href="http://web.facebook.com/amazing.denis.24"><i class="fab fa-facebook"></i> </a>
+                        <a href="mailto:denisondeyo7@gmail.com"><i class="fab fa-google"></i>  </a>
+                        <a href="tel:+254726534460"><i class="fas fa-phone"></i> </a>
                     </div>
                 </div>
                 
             </div>
             
         </div>
-        <h2 style='color: #007bff;'>Our stats</h2>
+        <div class="testimonials">
+            <h1>What people say</h1>
+
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="details">
+                        <div class="Testimonialimage">
+                            <img src="1774128504685.png" alt="">
+                        </div>
+
+                        <div class="names">
+                            <small>Paul Oyile</small>
+                            <p>Lecturer | Kibabii University</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>This is good work my boy</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h2 style='color: #007bff;'>We are Campus Study Hub</h2>
         <div class="stats_wrapper">
             <div class="statsbox">
                 <div class="content">
                     <p>Registered members</p>
-                    <i class="fa-regular  fa-user"id="icon"></i>
+                    <i class="fas  fa-user-group"id="icon"></i>
                     
                 </div>
                 <h3><?php echo $total_members?></h3>
@@ -278,17 +303,17 @@ if ($results && mysqli_num_rows($results)> 0){
                 <div class="developer">
                     <h2>Contact</h2>
                     <p>For more queries and assistant:</p>
-                    <a href="http://wa.me/254726534460"><i class="fab fa-whatsapp"></i> Whatsapp</a>
-                    <a href="http://web.facebook.com/amazing.denis.24"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="mailto:denisondeyo7@gmail.com"><i class="fab fa-google"></i> Email </a>
-                    <a href="tel:+254726534460"><i class="fas fa-phone"></i> Call now</a>
+                    <a href="http://wa.me/254726534460"> Whatsapp</a>
+                    <a href="http://web.facebook.com/amazing.denis.24"> Facebook</a>
+                    <a href="mailto:denisondeyo7@gmail.com"> Email </a>
+                    <a href="tel:+254726534460"> Call now</a>
                     
                    
                 </div>
 
             </div>
             <div class="subfooter">
-                <small>&copy AmazingDenis 2026</small>
+                <small>&copy Denis 2026 | All rights reserved</small>
                 <small>Campus study hub</small>
             </div>
         </div>

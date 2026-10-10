@@ -1,33 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level</title>
-    <link rel="stylesheet" href="../fontawesome-free-7.2.0-web/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-7.2.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-<body>
-    <div class="form-wrapper">
+  <body>
+    <div class="form-container">
+      <div class="form-wrapper">
+        <div class="form-img">
+          <img src="../1774128504685.png" alt="" />
+        </div>
+
         <form action="../level.php" method="post">
-            <p>Choose Current Progress</p>
-            <div class="input">
-                
-                <select name="year" id ="year"required>
-                    <option value="">Select year</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-                
-            </div>
+          <p>Choose Current Progress</p>
+          <div class="input">
+            <select name="year" id="year" required>
+              <option value="">Select year</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
 
-            <button id="loginbtn">Send <i class="fas fa-paper-plane"></i></button>
+          <button id="loginbtn">Send <i class="fas fa-paper-plane"></i></button>
         </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -74,37 +74,48 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 </head>
 
 <body>
-    <div class="form-wrapper">
-        <form action="" method="post">
-            <h2>Login here</h2>
-            <?php 
-                if(!empty($error)){
-                    echo $error;
-                } 
-            ?>
-            <div class="input">
-                <i class="fa-regular fa-user"></i>
-                <input type="text" name="username" placeholder="Enter Username" required>
-            </div>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-img">
+                <img src="../1774128504685.png" alt="">
 
-            <div class="input">
-                <i class="fas fa-lock-open"></i>
-                <input type="password" name="password" id="password" placeholder="Enter Password" required>
-                <div class="log" id="toggle">
-                    Show
-                    
+                
+            </div>
+            <form action="" method="post">
+                <h2>Login here</h2>
+                <?php 
+                    if(!empty($error)){
+                        echo $error;
+                    } 
+                ?>
+                <div class="input">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="username" placeholder="Enter Username" required>
                 </div>
-            </div>
-            <div class="links">
-                <p>Don't have an account yet?<a href="register.php">    Register</a></p>
-            </div>
-            <button id="loginbtn">Login</button>
-            
-        </form>
-        <div class="links">
-            <p><a href="get_email.php">Forgot  Password?</a></p>
+
+                <div class="input">
+                    <i class="fas fa-lock-open"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    <div class="log" id="toggle">
+                        Show
+                        
+                    </div>
+                </div>
+                <div class="links">
+                    <p>Don't have an account yet?<a href="register.php">    Register</a></p>
+                </div>
+                <button id="loginbtn">Login</button>
+                
+                <div class="links">
+                    <p><a href="get_email.php">Forgot  Password?</a></p>
+                </div>
+            </form>
         </div>
     </div>
+
+
+
+
     <script>
         password = document.getElementById('password');
         toggle = document.getElementById('toggle');

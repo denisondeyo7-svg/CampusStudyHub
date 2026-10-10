@@ -77,8 +77,12 @@ if(isset($_POST['changepass'])){
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="form-wrapper">
-        <form action="" method="post">
+    <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-img">
+                <img src="../1774128504685.png" alt="">
+            </div>
+            <form action="" method="post">
             <h2>Password Reset</h2>
             <?php
                 if (!empty($success)) {
@@ -104,5 +108,6 @@ if(isset($_POST['changepass'])){
             <button name="changepass" type="submit" id="loginbtn">Update Password</button>
         </form>
     </div>
+</div>
 </body>
 </html>
