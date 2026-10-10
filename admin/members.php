@@ -25,7 +25,7 @@ include("../connection.php");
        </div>
     <table>
         <tr>
-            <th>Id</th>
+            
             <th>username</th>
             <th>Email</th>
             <th>Delete</th>
@@ -36,7 +36,7 @@ include("../connection.php");
     if(mysqli_num_rows($results)>0){
         while($row=mysqli_fetch_assoc($results)){?>
             <tr>
-                <td> <?php echo $row['id'];?> </td>
+               
                 <td> <?php echo $row['username'];?> </td>
                 <td> <?php echo $row['email'];?> </td>
 
