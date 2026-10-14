@@ -87,7 +87,7 @@ if(isset($_POST['sendbtn'])){
             <div class="formmethod">
                
                 <form action="" method="post"id="contact-form">
-                    <p style="text-align: center;">Share your thoughts</p>
+                    <h2>Send Message</h2>
 
                     <?php
                         if(!empty($message)){
@@ -98,22 +98,27 @@ if(isset($_POST['sendbtn'])){
                         }
                     ?>
                     <div class="input">
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </div>
+                            <label for="name">Username</label>
+                            <input type="text"name="name" id="name"required>
+                        </div>
 
-                    <div class="input">
-                        <input type="number" name="number" placeholder="your Number" required>
-                    </div>
-                    <div class="input">
-                        <textarea id="textarea"name="message" placeholder="Write your message here...."required></textarea>
-                    </div>
-                    <button type="submit"name="sendbtn"id="loginbtn">Send Message <i class="fas fa-paper-plane"></i> </button>
+                        <div class="input">
+                            <label for="number">Phone Number</label>
+                            <input type="tel"name="number" id="number"required>
+                        </div>
+
+                        <div class="input">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="textarea"required></textarea>
+                        </div>
+                    <button type="submit"name="sendbtn"id="sendmessage">Send Message <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
         </div>
     </div>
 </body>
 <style>
+    
     .contact-wrapper {
     display: flex;
     margin: 0;
@@ -140,7 +145,6 @@ if(isset($_POST['sendbtn'])){
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     padding: 15px;
     margin: 12px;
@@ -151,42 +155,30 @@ if(isset($_POST['sendbtn'])){
     margin: 12px;
 
 }
+.formmethod{
+     width: 90%;
+}
+.input{
+   position: relative;
+   display: flex;
+   gap: 12px;
+   flex-direction: column;
+
+}
 form{
-        background: transparent;
-        box-shadow: 0 0 0;
+    display
+    background: transparent;
+    box-shadow: 0 0 0;
+     width: 90%;
     
     }
 
-    form input,#textarea{
-        width: 22rem;
-        outline: 1px solid #a8a4a4;
-        border: none;
-        border-radius: 12px;
-    }
-@media (max-width:600px){
-    form{
-        background: transparent;
-        box-shadow: 0 0 0;
-    
-    }
-
-    form input,#textarea{
-        width: 22rem;
-        outline: 1px solid #a8a4a4;
-        border: none;
-        border-radius: 12px;
-    }
-    
-    .contact-card:hover {
-        transform: translateY(-2px);
-    }
+form input,#textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #b1b0b0;
 }
-
-.image {
-    width: 20rem;
-    height: 16rem;
-}
-
 
 .more {
     display: flex;

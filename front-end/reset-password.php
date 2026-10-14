@@ -78,10 +78,11 @@ if(isset($_POST['changepass'])){
 </head>
 <body>
     <div class="form-container">
+        <div class="form-img">
+            <img src="../1774128504685.png" alt="">
+        </div>
         <div class="form-wrapper">
-            <div class="form-img">
-                <img src="../1774128504685.png" alt="">
-            </div>
+            <h1>Campus Study Hub</h1>
             <form action="" method="post">
             <h2>Password Reset</h2>
             <?php

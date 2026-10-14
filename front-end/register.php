@@ -80,19 +80,20 @@ if(isset($_POST['regbtn'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration </title>
+    <title>Registration | Campus Study Hub </title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../fontawesome-free-7.2.0-web/css/all.min.css">
 </head>
 
 <body>
     <div class="form-container">
+        <div class="form-img">
+            <img src="../1774128504685.png" alt="">
+        </div>
         <div class="form-wrapper">
-            <div class="form-img">
-                <img src="../1774128504685.png" alt="">
-            </div>
+            <h1>Campus Study Hub</h1>
             <form action="" method="post">
-            <h2>Register here</h2>
+            <h2>Register here  <i class="fa-regular fa-user"></i></h2>
 
             <?php 
 

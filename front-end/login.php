@@ -68,31 +68,31 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | campus study hub</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../fontawesome-free-7.2.0-web/css/all.min.css">
 </head>
 
 <body>
     <div class="form-container">
+        <div class="form-img">
+            <img src="../1774128504685.png" alt=""> 
+        </div>
+        
         <div class="form-wrapper">
-            <div class="form-img">
-                <img src="../1774128504685.png" alt="">
-
-                
-            </div>
+            <h1>Campus Study Hub</h1>
             <form action="" method="post">
-                <h2>Login here</h2>
+                <h2>Welcome Back <i class="fas fa-graduation-cap"></i></h2>
                 <?php 
                     if(!empty($error)){
                         echo $error;
-                    } 
-                ?>
+                        } 
+                        ?>
                 <div class="input">
                     <i class="fa-regular fa-user"></i>
                     <input type="text" name="username" placeholder="Enter Username" required>
                 </div>
-
+                
                 <div class="input">
                     <i class="fas fa-lock-open"></i>
                     <input type="password" name="password" id="password" placeholder="Enter Password" required>
@@ -106,11 +106,12 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                 </div>
                 <button id="loginbtn">Login</button>
                 
-                <div class="links">
-                    <p><a href="get_email.php">Forgot  Password?</a></p>
-                </div>
             </form>
+            <div class="links">
+                <p><a href="get_email.php">Forgot  Password?</a></p>
+            </div>
         </div>
+        
     </div>
 
 

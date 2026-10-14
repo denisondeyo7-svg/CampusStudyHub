@@ -45,53 +45,47 @@ if(isset($_POST['sendmessage'])){
 </head>
 
 <body>
-    <header>
-        <div class="mytitle">
-            <h1>Campus study Hub</h1>
-        </div>
-
-        <div class="start-links">
-            <a href="front-end/login.php">
-                <button id="login-index-btn">Login</button>
-            </a>
-
-            <a href="front-end/register.php">
-                <button id="reg-btn">
-                    Get started
-                </button>
-            </a>
-        </div>
-    </header>
     
+  <div class="index-logo">
+    <h1>Campus Study Hub</h1> 
+  </div> 
     <div class="index-page-container">
         <br><br>
         <div class="slider-index">
             <img src="1774128504685.png" alt="">
            
 
-            <div class="top">
-             
+            <div class="top">         
 
-             <div class="container-content">
-                <h1>Campus study Hub</h1>
-            
-                <h2>Only for Information Technology</h2>
-                <br>
+                <div class="container-content">
+                    
                 
-                <div class="theme">
-                    <p>
-                        Access all your notes, revision papers, and campus news while staying on track with your timetable and deadlines.
-                    </p>
+                    <h2>Only for Information Technology</h2>
+                    <br>
+                    
+                    <div class="theme">
+                        <p>
+                            Access all your notes, revision papers, and campus news while staying on track with your timetable and deadlines.
+                        </p>
+                    </div>
+                    <br>
+                    <h2>Developed by Denis</h2>
+                    <br/><br/>
+
+                    <div class="start-links">
+                        <a href="front-end/login.php">
+                            <button id="login-index-btn">Login      <i class="fas fa-arrow-right"></i></button>
+                        </a>
+
+                        <a href="front-end/register.php">
+                            <button id="reg-btn">
+                                Get started     <i class="fa-regular fa-user"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <br>
-                <h2>Developed by Denis</h2>
-                <br/><br/>
-                <a href="front-end/login.php">
-                    <button id="gobtn">Login</button>
-                </a>
-            </div>
             
-       </div>
+            </div>
             
         </div>
        
@@ -179,17 +173,21 @@ if(isset($_POST['sendmessage'])){
 
                         ?>
                         <div class="input">
-                            <input type="text"name="name" placeholder="Username ..."required>
+                            <label for="name">Username</label>
+                            <input type="text"name="name" id="name"required>
                         </div>
 
                         <div class="input">
-                            <input type="tel"name="number" placeholder="phone ..."required>
+                            <label for="number">Phone Number</label>
+                            <input type="tel"name="number" id="number"required>
                         </div>
 
                         <div class="input">
-                            <textarea name="message" id="message"placeholder="Type message here ..."required></textarea>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"required></textarea>
                         </div>
-                        <button type="submit" name="sendmessage"id="sendmessage">Share Thought  <i class="fas fa-paper-plane"></i></button>
+                        <br>
+                        <button type="submit" name="sendmessage"id="sendmessage">Send Message  <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>

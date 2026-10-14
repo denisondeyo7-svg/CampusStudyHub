@@ -10,25 +10,26 @@ include("connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastpapers</title>
+    <title>Pastpapers |Campus Study hub</title>
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+      
     <div class="main-pdf-wrapper">
         <div class="pdf-wrapper">
-            <div class="boxx">
-        
-                <div class="content">
-                    <button onclick="history.back()"id="backbtn"><i class="fas fa-undo"></i>   Back</button>
-                    <p>Hello <?php echo $_SESSION['username'];?> !</p>
-                    <div class="welcome">
-                        <p>Access all  revision pdfs here.</p>
-                    </div>
+        <div class="boxx">
+            <div class="content">
+                <button onclick="history.back()"id="backbtn"><i class="fas fa-undo"></i>   Back</button>
+                <div class="welcome">
+                    <p>
+                    Access revision pdfs here <?php echo $_SESSION['username'];?> !</p>
                 </div>
-            
             </div>
-
+            </div>
+            
+<br>
             <fieldset>
                 <legend><p class="den">1 <sup>ST</sup> Year Semister 1 Revision PDFS</p></legend>
                 <div class="notes">
@@ -43,7 +44,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -79,7 +80,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -114,7 +115,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -149,7 +150,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -186,7 +187,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -222,7 +223,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -256,7 +257,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 
@@ -292,7 +293,7 @@ include("connection.php");
                             
                             <li><?php echo $row['description'];?></li>
                             <div class="cta_links">
-                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download notes  
+                                <a href="pdfs/<?php echo $row['pdf'];?>" id="downloadnotes" download="pdfs/<?php echo $row['pdf'];?>">Download PDF  
                                     <i class="fas fa-download"></i>
                                 </a>
 

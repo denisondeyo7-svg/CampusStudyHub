@@ -10,7 +10,7 @@ include("connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastpapers</title>
+    <title>Tests | Campus Study Hub</title>
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,16 +21,16 @@ include("connection.php");
         
                 <div class="content">
                     <button onclick="history.back()"id="backbtn"><i class="fas fa-undo"></i>   Back</button>
-                    <p>Hello <?php echo $_SESSION['username'];?> !</p>
+                    
                     <div class="welcome">
-                        <p>Access all  assessments here.</p>
+                        <p>Welcome back <?php echo $_SESSION['username'];?> !</p>
                     </div>
                 </div>
             
             </div>
 
             <fieldset>
-                <legend><p class="den">1 <sup>ST</sup> Year Semister 1 Revision PDFS</p></legend>
+                <legend><p class="den">1 <sup>ST</sup> Year Semister 1 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -56,7 +56,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet ...";
                     }
                     ?>
                     </ol>
@@ -65,7 +65,7 @@ include("connection.php");
 
 <br>
            
-                <legend><p class="den">Semister 2 Revision PDFS</p></legend>
+                <legend><p class="den">Semister 2 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -91,7 +91,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -100,7 +100,7 @@ include("connection.php");
 
             <br>
             <fieldset>
-                <legend><p class="den">2 <sup>ND</sup> Year Semister 1 Revision PDFS</p></legend>
+                <legend><p class="den">2 <sup>ND</sup> Year Semister 1 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -126,7 +126,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -135,7 +135,7 @@ include("connection.php");
 
 <br>
             
-                <legend><p class="den">Semister 2 Revision PDFS</p></legend>
+                <legend><p class="den">Semister 2 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -161,7 +161,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -172,7 +172,7 @@ include("connection.php");
 
 
             <fieldset>
-                <legend><p class="den">3<sup>RD</sup> Year Semister 1 Revision PDFS</p></legend>
+                <legend><p class="den">3<sup>RD</sup> Year Semister 1 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -198,7 +198,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -206,7 +206,7 @@ include("connection.php");
             
 <br>
            
-                <legend><p class="den">Semister 2 Revision PDFS</p></legend>
+                <legend><p class="den">Semister 2 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -232,7 +232,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -240,7 +240,7 @@ include("connection.php");
             </fieldset>
 
             <fieldset>
-                <legend><p class="den">4<sup>TH</sup> Year Semister 1 Revision PDFS</p></legend>
+                <legend><p class="den">4<sup>TH</sup> Year Semister 1 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -266,7 +266,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
@@ -274,7 +274,7 @@ include("connection.php");
            
 <br>
             
-                <legend><p class="den">Semister 2 Revision PDFS</p></legend>
+                <legend><p class="den">Semister 2 Assessments</p></legend>
                 <div class="notes">
                     <ol>
                     <?php 
@@ -300,7 +300,7 @@ include("connection.php");
                         }
                     }
                     else{
-                        echo"Content not available at this moment";
+                        echo"Tests has not been added yet";
                     }
                     ?>
                     </ol>
